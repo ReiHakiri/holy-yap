@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Holy yap</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href = "../main.html">Home</a></li>
+            <li><a href = "../yap.html">Yap</a></li>
+        </ul>
+    </nav>
+    <div>
+    <canvas id = "banner1" width = "256"  height = "256"></canvas>
+    <canvas id = "banner2" width = "450"  height = "256"></canvas>
+    <canvas id = "banner3" width = "512"  height = "256"></canvas>
+    </div>
+    
+    <h1>Block cellular automata</h1>
+
+    <p>A cellular automaton (CA) has a bunch of cells of different colors. The color of each cell gets updated based on the colors of 
+        neighboring cells. A few examples of CA include
+        <a href = "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>,
+        <a href = "https://en.wikipedia.org/wiki/Rule_30">rule 30</a>, and
+        <a href = "https://en.wikipedia.org/wiki/Wireworld">Wireworld</a>.
+        In this article, we will focus on block cellular automata with black and white colors only. 
+        Block CA have a kinda weird way of updating but still produce interesting results.
+    </p>
+
+    <p>For example, there are block CA that simulate balls kinda:</p>
+
+    <figure>
+        <canvas id = "ex-balls" width = "256" height = "256"></canvas>
+    </figure>
+
+    <p>There are also block CA that produce cool looking patterns:</p>
+
+    <figure>
+        <canvas id = "ex-tron" width = "256" height = "256"></canvas>
+    </figure>
+
+    <p>There are also block CA that produce random looking patterns:</p>
+
+    <figure>
+        <canvas id = "ex-random" width = "256" height = "256"></canvas>
+    </figure>
+
+    <script type = "module" src = "../banners/banner-prng.js"></script>
+    <script type = "module" src = "script.js"></script>
+</body>
+</html>

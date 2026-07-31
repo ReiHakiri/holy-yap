@@ -1,7 +1,6 @@
 import * as ba from "./block-automata.js"
 import * as om from "../helpers/other-math.js"
 import * as d from "../helpers/display.js"
-import * as p from "../helpers/pointer.js"
 
 export function flatten (l, n) {
     const result = [];

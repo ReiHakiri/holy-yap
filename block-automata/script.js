@@ -3,7 +3,6 @@ import * as bd from "../block-automata/display.js"
 import * as rules from "./rules.js"
 import * as prng from "./prng.js"
 import * as d from "../helpers/display.js"
-import * as p from "../helpers/pointer.js"
 
 const exBalls = document.getElementById("ex-balls");
 const exBallsCtx = exBalls.getContext("2d");

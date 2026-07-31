@@ -64,6 +64,7 @@ EX_RULE.set(JSON.stringify([[true, true], [true, true]]), [[false, false], [fals
 EX_RULE.set(JSON.stringify([[false, false], [false, false]]), [[false, false], [false, true]]);
 EX_RULE.set(JSON.stringify([[false, false], [false, true]]), [[true, false], [false, false]]);
 
+// From https://en.wikipedia.org/wiki/Critters_(cellular_automaton)
 export const CRITTERS_RULE = defaultRule(2);
 CRITTERS_RULE.set(JSON.stringify([[false, false], [false, false]]), [[true, true], [true, true]]);
 CRITTERS_RULE.set(JSON.stringify([[false, false], [false, true]]), [[true, true], [true, false]]);

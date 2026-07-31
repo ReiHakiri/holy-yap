@@ -57,3 +57,9 @@ SP_RULE.set(JSON.stringify([[true, true, true, true],
                             [false, false, false, false],
                             [false, false, false, false],
                             [false, false, false, false]])
+
+export const EX_RULE = defaultRule(2);
+EX_RULE.set(JSON.stringify([[true, false], [false, false]]), [[true, true], [true, true]]);
+EX_RULE.set(JSON.stringify([[true, true], [true, true]]), [[false, false], [false, false]]);
+EX_RULE.set(JSON.stringify([[false, false], [false, false]]), [[false, false], [false, true]]);
+EX_RULE.set(JSON.stringify([[false, false], [false, true]]), [[true, false], [false, false]]);

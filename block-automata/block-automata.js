@@ -104,6 +104,6 @@ function inverse_map (map) {
 
 export class ReversibleBlockAutomata extends BlockAutomata {
     reverse () {
-        return new ReversibleBlockAutomata(inverse_map(this.rule), twoDeepCopy(this.state), !this.firstPhase, this.divisions);
+        return new ReversibleBlockAutomata(inverse_map(this.rule), this.getState(), !this.firstPhase, this.divisions);
     }
 }

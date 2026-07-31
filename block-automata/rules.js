@@ -63,3 +63,15 @@ EX_RULE.set(JSON.stringify([[true, false], [false, false]]), [[true, true], [tru
 EX_RULE.set(JSON.stringify([[true, true], [true, true]]), [[false, false], [false, false]]);
 EX_RULE.set(JSON.stringify([[false, false], [false, false]]), [[false, false], [false, true]]);
 EX_RULE.set(JSON.stringify([[false, false], [false, true]]), [[true, false], [false, false]]);
+
+export const CRITTERS_RULE = defaultRule(2);
+CRITTERS_RULE.set(JSON.stringify([[false, false], [false, false]]), [[true, true], [true, true]]);
+CRITTERS_RULE.set(JSON.stringify([[false, false], [false, true]]), [[true, true], [true, false]]);
+CRITTERS_RULE.set(JSON.stringify([[false, false], [true, false]]), [[true, true], [false, true]]);
+CRITTERS_RULE.set(JSON.stringify([[false, true], [false, false]]), [[true, false], [true, true]]);
+CRITTERS_RULE.set(JSON.stringify([[false, true], [true, true]]), [[false, false], [false, true]]);
+CRITTERS_RULE.set(JSON.stringify([[true, false], [false, false]]), [[false, true], [true, true]]);
+CRITTERS_RULE.set(JSON.stringify([[true, false], [true, true]]), [[false, false], [true, false]]);
+CRITTERS_RULE.set(JSON.stringify([[true, true], [false, true]]), [[false, true], [false, false]]);
+CRITTERS_RULE.set(JSON.stringify([[true, true], [true, false]]), [[true, false], [false, false]]);
+CRITTERS_RULE.set(JSON.stringify([[true, true], [true, true]]), [[false, false], [false, false]]);
